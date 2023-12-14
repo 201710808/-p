@@ -49,7 +49,7 @@ class TitlePage(QMainWindow, QWidget):
 
         self.button = QPushButton('', self)
         self.button.setGeometry(QRect(0, 0, 467, 960))
-        self.button.setStyleSheet("QPushButton{background-image: url(title.png)}")
+        self.button.setStyleSheet("QPushButton{background-image: url(resource/title.png)}")
         self.button.clicked.connect(self.changePage)
 
     def changePage(self):
@@ -78,7 +78,7 @@ class AnalyzePage(QMainWindow, QWidget):
 
         self.background = QLabel(' ', self)
         self.background.setGeometry(QRect(0, 0, 467, 960))
-        self.background.setStyleSheet("QLabel{background-image: url(inform.png)}")
+        self.background.setStyleSheet("QLabel{background-image: url(resource/inform.png)}")
 
         self.button = QPushButton('+', self)
         self.button.clicked.connect(self.filedialog_open)
@@ -92,12 +92,12 @@ class AnalyzePage(QMainWindow, QWidget):
         self.example_button = QPushButton('', self)
         self.example_button.resize(54, 32)
         self.example_button.move(82, 492)
-        self.example_button.setStyleSheet("QPushButton{background-image: url(example.png)}")
+        self.example_button.setStyleSheet("QPushButton{background-image: url(resource/example.png)}")
         # font2 = self.example_button.font()
         # font2.setPointSize(20)
         # font2.setBold(True)
         # self.example_button.setFont(font2)
-        self.example_button.setToolTip('<img src="예시.png">')
+        self.example_button.setToolTip('<img src="resource/예시.png">')
 
         self.b4 = QPushButton('다음', self)
         self.b4.move(345, 895)
@@ -110,14 +110,14 @@ class AnalyzePage(QMainWindow, QWidget):
 
         self.loading_screen = QLabel(' ', self)
         self.loading_screen.setGeometry(QRect(0, 0, 467, 960))
-        self.loading_screen.setStyleSheet("QLabel{background-image: url(black.png)}")
+        self.loading_screen.setStyleSheet("QLabel{background-image: url(resource/black.png)}")
         self.loading_screen.hide()
 
 
         self.loading_img = QLabel(' ', self)
         # self.loading_img.setGeometry(QRect(201, 448, 64, 64))
         self.loading_img.setGeometry(QRect(int(467 / 2 - 68), int(960 / 2 - 95), 200, 200))
-        self.movie = QMovie('Hourglass.gif', QByteArray(), self)
+        self.movie = QMovie('resource/Hourglass.gif', QByteArray(), self)
         self.movie.setCacheMode(QMovie.CacheAll)
         # QLabel에 동적 이미지 삽입
         self.loading_img.setMovie(self.movie)
@@ -125,7 +125,7 @@ class AnalyzePage(QMainWindow, QWidget):
         self.loading_img.hide()
 
         self.title = QLabel('', self)
-        self.title.setStyleSheet("QLabel{background-image: url(사진선택.png)}")
+        self.title.setStyleSheet("QLabel{background-image: url(resource/사진선택.png)}")
         self.title.setGeometry(QRect(0, 0, 467, 76))
 
 
@@ -259,40 +259,40 @@ class ResultPage(QMainWindow, QWidget):
             # self.label1.setText(text_warning)
             # 심각 심각
             if (upper_x <= 42 and upper_x != 0) and (lower_x <= 42 and lower_x != 0):
-                self.background.setStyleSheet("QLabel{background-image: url(    1심각심각심각.PNG)}")
+                self.background.setStyleSheet("QLabel{background-image: url(resource/1심각심각심각.PNG)}")
                 # self.label3.setText(text_000)
             # 보통 심각
             elif (42 < upper_x <= 68) and (lower_x <= 42 and lower_x != 0):
-                self.background.setStyleSheet("QLabel{background-image: url(4심각보통심각.PNG)}")
+                self.background.setStyleSheet("QLabel{background-image: url(resource/4심각보통심각.PNG)}")
                 # self.label3.setText(text_010)
             # 보통 보통
             elif (42 < upper_x <= 68) and (42 < lower_x <= 68):
-                self.background.setStyleSheet("QLabel{background-image: url(5심각보통보통.PNG)}")
+                self.background.setStyleSheet("QLabel{background-image: url(resource/5심각보통보통.PNG)}")
                 # self.label3.setText(text_011)
             # 심각 보통
             elif (upper_x <= 42 and upper_x != 0) and (42 < lower_x <= 68):
-                self.background.setStyleSheet("QLabel{background-image: url(2심각심각보통.PNG)}")
+                self.background.setStyleSheet("QLabel{background-image: url(resource/2심각심각보통.PNG)}")
                 # self.background.setStyleSheet("QLabel{background-image: url(2페이지_임시4.PNG)}")
                 # self.label3.setText(text_001)
             # 심각 양호
             elif (upper_x <= 42 and upper_x != 0) and (lower_x > 68):
-                self.background.setStyleSheet("QLabel{background-image: url(3심각심각양호.PNG)}")
+                self.background.setStyleSheet("QLabel{background-image: url(resource/3심각심각양호.PNG)}")
                 # self.label3.setText(text_002)
             # 양호 심각
             elif (upper_x > 68) and (lower_x <= 68 and lower_x != 0):
-                self.background.setStyleSheet("QLabel{background-image: url(7심각양호심각.PNG)}")
+                self.background.setStyleSheet("QLabel{background-image: url(resource/7심각양호심각.PNG)}")
                 # self.label3.setText(text_020)
             # 양호 양호
             elif (upper_x > 68) and (lower_x > 68):
-                self.background.setStyleSheet("QLabel{background-image: url(9심각양호양호.PNG)}")
+                self.background.setStyleSheet("QLabel{background-image: url(resource/9심각양호양호.PNG)}")
                 # self.label3.setText(text_022)
             # 보통 양호
             elif (42 < upper_x <= 68) and (lower_x > 68):
-                self.background.setStyleSheet("QLabel{background-image: url(6심각보통양호.PNG)}")
+                self.background.setStyleSheet("QLabel{background-image: url(resource/6심각보통양호.PNG)}")
                 # self.label3.setText(text_012)
             # 양호 보통
             elif (upper_x > 68) and (42 < lower_x <= 68):
-                self.background.setStyleSheet("QLabel{background-image: url(8심각양호보통.PNG)}")
+                self.background.setStyleSheet("QLabel{background-image: url(resource/8심각양호보통.PNG)}")
                 # self.label3.setText(text_021)
 
         elif 68 >= x > 42:
@@ -300,39 +300,39 @@ class ResultPage(QMainWindow, QWidget):
             # self.label1.setText(text_normal)
             # 심각 심각
             if (upper_x <= 42 and upper_x != 0) and (lower_x <= 42 and lower_x != 0):
-                self.background.setStyleSheet("QLabel{background-image: url(10보통심각심각.PNG)}")
+                self.background.setStyleSheet("QLabel{background-image: url(resource/10보통심각심각.PNG)}")
                 # self.label3.setText(text_100)
             # 보통 심각
             elif (42 < upper_x <= 68) and (lower_x <= 42 and lower_x != 0):
-                self.background.setStyleSheet("QLabel{background-image: url(13보통보통심각.PNG)}")
+                self.background.setStyleSheet("QLabel{background-image: url(resource/13보통보통심각.PNG)}")
                 # self.label3.setText(text_110)
             # 보통 보통
             elif (42 < upper_x <= 68) and (42 < lower_x <= 68):
-                self.background.setStyleSheet("QLabel{background-image: url(14보통보통보통.PNG)}")
+                self.background.setStyleSheet("QLabel{background-image: url(resource/14보통보통보통.PNG)}")
                 # self.label3.setText(text_111)
             # 심각 보통
             elif (upper_x <= 42 and upper_x != 0) and (42 < lower_x <= 68):
-                self.background.setStyleSheet("QLabel{background-image: url(11보통심각보통.PNG)}")
+                self.background.setStyleSheet("QLabel{background-image: url(resource/11보통심각보통.PNG)}")
                 # self.label3.setText(text_101)
             # 심각 양호
             elif (upper_x <= 42 and upper_x != 0) and (lower_x > 68):
-                self.background.setStyleSheet("QLabel{background-image: url(12보통심각양호.PNG)}")
+                self.background.setStyleSheet("QLabel{background-image: url(resource/12보통심각양호.PNG)}")
                 # self.label3.setText(text_102)
             # 양호 심각
             elif (upper_x > 68) and (lower_x <= 68 and lower_x != 0):
-                self.background.setStyleSheet("QLabel{background-image: url(16보통양호심각.PNG)}")
+                self.background.setStyleSheet("QLabel{background-image: url(resource/16보통양호심각.PNG)}")
                 # self.label3.setText(text_120)
             # 양호 양호
             elif (upper_x > 68) and (lower_x > 68):
-                self.background.setStyleSheet("QLabel{background-image: url(18보통양호양호.PNG)}")
+                self.background.setStyleSheet("QLabel{background-image: url(resource/18보통양호양호.PNG)}")
                 # self.label3.setText(text_122)
             # 보통 양호
             elif (42 < upper_x <= 68) and (lower_x > 68):
-                self.background.setStyleSheet("QLabel{background-image: url(15보통보통양호.PNG)}")
+                self.background.setStyleSheet("QLabel{background-image: url(resource/15보통보통양호.PNG)}")
                 # self.label3.setText(text_112)
             # 양호 보통
             elif (upper_x > 68) and (42 < lower_x <= 68):
-                self.background.setStyleSheet("QLabel{background-image: url(17보통양호보통.PNG)}")
+                self.background.setStyleSheet("QLabel{background-image: url(resource/17보통양호보통.PNG)}")
                 # self.label3.setText(text_121)
 
         elif x > 68:
@@ -340,39 +340,39 @@ class ResultPage(QMainWindow, QWidget):
             # self.label1.setText(text_good)
             # 심각 심각
             if (upper_x <= 42 and upper_x != 0) and (lower_x <= 42 and lower_x != 0):
-                self.background.setStyleSheet("QLabel{background-image: url(19양호심각심각.PNG)}")
+                self.background.setStyleSheet("QLabel{background-image: url(resource/19양호심각심각.PNG)}")
                 # self.label3.setText(text_200)
             # 보통 심각
             elif (42 < upper_x <= 68) and (lower_x <= 42 and lower_x != 0):
-                self.background.setStyleSheet("QLabel{background-image: url(22양호보통심각.PNG)}")
+                self.background.setStyleSheet("QLabel{background-image: url(resource/22양호보통심각.PNG)}")
                 # self.label3.setText(text_210)
             # 보통 보통
             elif (42 < upper_x <= 68) and (42 < lower_x <= 68):
-                self.background.setStyleSheet("QLabel{background-image: url(23양호보통보통.PNG)}")
+                self.background.setStyleSheet("QLabel{background-image: url(resource/23양호보통보통.PNG)}")
                 # self.label3.setText(text_211)
             # 심각 보통
             elif (upper_x <= 42 and upper_x != 0) and (42 < lower_x <= 68):
-                self.background.setStyleSheet("QLabel{background-image: url(20양호심각보통.PNG)}")
+                self.background.setStyleSheet("QLabel{background-image: url(resource/20양호심각보통.PNG)}")
                 # self.label3.setText(text_201)
             # 심각 양호
             elif (upper_x <= 42 and upper_x != 0) and (lower_x > 68):
-                self.background.setStyleSheet("QLabel{background-image: url(21양호심각양호.PNG)}")
+                self.background.setStyleSheet("QLabel{background-image: url(resource/21양호심각양호.PNG)}")
                 # self.label3.setText(text_202)
             # 양호 심각
             elif (upper_x > 68) and (lower_x <= 68 and lower_x != 0):
-                self.background.setStyleSheet("QLabel{background-image: url(25양호양호심각.PNG)}")
+                self.background.setStyleSheet("QLabel{background-image: url(resource/25양호양호심각.PNG)}")
                 # self.label3.setText(text_220)
             # 양호 양호
             elif (upper_x > 68) and (lower_x > 68):
-                self.background.setStyleSheet("QLabel{background-image: url(27양호양호양호.PNG)}")
+                self.background.setStyleSheet("QLabel{background-image: url(resource/27양호양호양호.PNG)}")
                 # self.label3.setText(text_222)
             # 보통 양호
             elif (42 < upper_x <= 68) and (lower_x > 68):
-                self.background.setStyleSheet("QLabel{background-image: url(24양호보통양호.PNG)}")
+                self.background.setStyleSheet("QLabel{background-image: url(resource/24양호보통양호.PNG)}")
                 # self.label3.setText(text_212)
             # 양호 보통
             elif (upper_x > 68) and (42 < lower_x <= 68):
-                self.background.setStyleSheet("QLabel{background-image: url(24양호양호보통.PNG)}")
+                self.background.setStyleSheet("QLabel{background-image: url(resource/24양호양호보통.PNG)}")
                 # self.label3.setText(text_221)
 
         self.graph_color_bar.setGeometry(QRect(79, 328, int(y), 38))
@@ -406,15 +406,15 @@ class ResultPage(QMainWindow, QWidget):
 
         self.graph_color_bar = QLabel(' ', self)
         self.graph_color_bar.setGeometry(QRect(79, 328, 305, 38))
-        self.graph_color_bar.setStyleSheet("QLabel{background-image: url(color_bar.png)}")
+        self.graph_color_bar.setStyleSheet("QLabel{background-image: url(resource/color_bar.png)}")
 
         self.graph_edge = QLabel(' ', self)
         self.graph_edge.setGeometry(QRect(74, 325, 317, 44))
-        self.graph_edge.setStyleSheet("QLabel{background-image: url(bar_edge.png)}")
+        self.graph_edge.setStyleSheet("QLabel{background-image: url(resource/bar_edge.png)}")
 
         self.graph_arrow = QLabel(' ', self)
         self.graph_arrow.setGeometry(QRect(73, 323, 317, 44))
-        self.graph_arrow.setStyleSheet("QLabel{background-image: url(arrow.png)}")
+        self.graph_arrow.setStyleSheet("QLabel{background-image: url(resource/arrow.png)}")
 
         self.timer = QTimer()
         self.timer.setInterval(500)
@@ -432,7 +432,7 @@ class ResultPage(QMainWindow, QWidget):
         self.b5.clicked.connect(self.prevPage)
 
         self.title = QLabel('', self)
-        self.title.setStyleSheet("QLabel{background-image: url(결과요약.png)}")
+        self.title.setStyleSheet("QLabel{background-image: url(resource/결과요약.png)}")
         self.title.setGeometry(QRect(0, 0, 467, 76))
 
         # self.label = QLabel(self)
@@ -532,19 +532,19 @@ class ResultPage2(QMainWindow, QWidget):
         self.b5.clicked.connect(self.prevPage)
 
         self.title = QLabel('', self)
-        self.title.setStyleSheet("QLabel{background-image: url(전체결과.png)}")
+        self.title.setStyleSheet("QLabel{background-image: url(resource/전체결과.png)}")
         self.title.setGeometry(QRect(0, 0, 467, 76))
 
     def refreshImage(self):
         # 심각
         if x <= 42 and x != 0:
-            self.background.setStyleSheet("QLabel{background-image: url(1심각.PNG)}")
+            self.background.setStyleSheet("QLabel{background-image: url(resource/1심각.PNG)}")
         # 보통
         elif 68 >= x > 42:
-            self.background.setStyleSheet("QLabel{background-image: url(2보통.PNG)}")
+            self.background.setStyleSheet("QLabel{background-image: url(resource/2보통.PNG)}")
         # 양호
         elif x > 68:
-            self.background.setStyleSheet("QLabel{background-image: url(3양호.PNG)}")
+            self.background.setStyleSheet("QLabel{background-image: url(resource/3양호.PNG)}")
 
     def nextPage(self):
         widget.setCurrentIndex(widget.currentIndex() + 1)
@@ -581,46 +581,46 @@ class ResultPage3(QMainWindow, QWidget):
         self.b5.clicked.connect(self.prevPage)
 
         self.title = QLabel('', self)
-        self.title.setStyleSheet("QLabel{background-image: url(세부결과.png)}")
+        self.title.setStyleSheet("QLabel{background-image: url(resource/세부결과.png)}")
         self.title.setGeometry(QRect(0, 0, 467, 76))
 
     def refreshImage(self):
         # 심각 심각
         if (upper_x <= 42 and upper_x != 0) and (lower_x <= 42 and lower_x != 0):
-            self.background.setStyleSheet("QLabel{background-image: url(1심각심각.PNG)}")
+            self.background.setStyleSheet("QLabel{background-image: url(resource/1심각심각.PNG)}")
             # self.label3.setText(text_000)
         # 보통 심각
         elif (42 < upper_x <= 68) and (lower_x <= 42 and lower_x != 0):
-            self.background.setStyleSheet("QLabel{background-image: url(4보통심각.PNG)}")
+            self.background.setStyleSheet("QLabel{background-image: url(resource/4보통심각.PNG)}")
             # self.label3.setText(text_010)
         # 보통 보통
         elif (42 < upper_x <= 68) and (42 < lower_x <= 68):
-            self.background.setStyleSheet("QLabel{background-image: url(5보통보통.PNG)}")
+            self.background.setStyleSheet("QLabel{background-image: url(resource/5보통보통.PNG)}")
             # self.label3.setText(text_011)
         # 심각 보통
         elif (upper_x <= 42 and upper_x != 0) and (42 < lower_x <= 68):
-            self.background.setStyleSheet("QLabel{background-image: url(2심각보통.PNG)}")
+            self.background.setStyleSheet("QLabel{background-image: url(resource/2심각보통.PNG)}")
             # self.background.setStyleSheet("QLabel{background-image: url(2페이지_임시4.PNG)}")
             # self.label3.setText(text_001)
         # 심각 양호
         elif (upper_x <= 42 and upper_x != 0) and (lower_x > 68):
-            self.background.setStyleSheet("QLabel{background-image: url(3심각양호.PNG)}")
+            self.background.setStyleSheet("QLabel{background-image: url(resource/3심각양호.PNG)}")
             # self.label3.setText(text_002)
         # 양호 심각
         elif (upper_x > 68) and (lower_x <= 68 and lower_x != 0):
-            self.background.setStyleSheet("QLabel{background-image: url(7양호심각.PNG)}")
+            self.background.setStyleSheet("QLabel{background-image: url(resource/7양호심각.PNG)}")
             # self.label3.setText(text_020)
         # 양호 양호
         elif (upper_x > 68) and (lower_x > 68):
-            self.background.setStyleSheet("QLabel{background-image: url(9양호양호.PNG)}")
+            self.background.setStyleSheet("QLabel{background-image: url(resource/9양호양호.PNG)}")
             # self.label3.setText(text_022)
         # 보통 양호
         elif (42 < upper_x <= 68) and (lower_x > 68):
-            self.background.setStyleSheet("QLabel{background-image: url(6보통양호.PNG)}")
+            self.background.setStyleSheet("QLabel{background-image: url(resource/6보통양호.PNG)}")
             # self.label3.setText(text_012)
         # 양호 보통
         elif (upper_x > 68) and (42 < lower_x <= 68):
-            self.background.setStyleSheet("QLabel{background-image: url(8양호보통.PNG)}")
+            self.background.setStyleSheet("QLabel{background-image: url(resource/8양호보통.PNG)}")
             # self.label3.setText(text_021)
 
     def nextPage(self):
@@ -659,7 +659,7 @@ class ResultPage4(QMainWindow, QWidget):
         self.b5.clicked.connect(self.prevPage)
 
         self.title = QLabel('', self)
-        self.title.setStyleSheet("QLabel{background-image: url(권장식품.png)}")
+        self.title.setStyleSheet("QLabel{background-image: url(resource/권장식품.png)}")
         self.title.setGeometry(QRect(0, 0, 467, 76))
 
     def refreshImage(self):
@@ -667,16 +667,16 @@ class ResultPage4(QMainWindow, QWidget):
         if 68 > x > 0:
             # 소화계, 순환계
             if (0 < upper_x <= 68) and (0 < lower_x <= 68):
-                self.background.setStyleSheet("QLabel{background-image: url(소화계_순환계.PNG)}")
+                self.background.setStyleSheet("QLabel{background-image: url(resource/소화계_순환계.PNG)}")
             # 양호 양호
             elif (upper_x > 68) and (lower_x > 68):
-                self.background.setStyleSheet("QLabel{background-image: url(18보통양호양호.PNG)}")
+                self.background.setStyleSheet("QLabel{background-image: url(resource/18보통양호양호.PNG)}")
             # 소화계
             elif (0 < upper_x <= 68) and (lower_x > 68):
-                self.background.setStyleSheet("QLabel{background-image: url(소화계.PNG)}")
+                self.background.setStyleSheet("QLabel{background-image: url(resource/소화계.PNG)}")
             # 순환계
             elif (upper_x > 68) and (0 < lower_x <= 68):
-                self.background.setStyleSheet("QLabel{background-image: url(순환계.PNG)}")
+                self.background.setStyleSheet("QLabel{background-image: url(resource/순환계.PNG)}")
 
     def nextPage(self):
         widget.setCurrentIndex(widget.currentIndex() + 1)
@@ -697,7 +697,7 @@ class ResultPage5(QMainWindow, QWidget):
 
         self.background = QLabel('', self)
         self.background.setGeometry(QRect(0, 0, 467, 960))
-        self.background.setStyleSheet("QLabel{background-image: url(link_page.png)}")
+        self.background.setStyleSheet("QLabel{background-image: url(resource/link_page.png)}")
 
         self.b4 = QPushButton('나가기', self)
         self.b4.move(345, 895)
@@ -708,33 +708,33 @@ class ResultPage5(QMainWindow, QWidget):
         self.b5.clicked.connect(self.prevPage)
 
         self.title = QLabel('', self)
-        self.title.setStyleSheet("QLabel{background-image: url(관련정보들.png)}")
+        self.title.setStyleSheet("QLabel{background-image: url(resource/관련정보들.png)}")
         self.title.setGeometry(QRect(0, 0, 467, 76))
 
         self.button1 = QPushButton('', self)
         self.button1.setGeometry(QRect(68, 240, 44, 44))
-        self.button1.setStyleSheet("QPushButton{background-image: url(link_button.png)}")
+        self.button1.setStyleSheet("QPushButton{background-image: url(resource/link_button.png)}")
         self.button1.clicked.connect(lambda: webbrowser.open('http://kowaent.co.kr/Module/News/Lecture.asp?Mode=V'
                                                              '&Srno=9044'))
 
         self.button2 = QPushButton('', self)
         self.button2.setGeometry(QRect(68, 360, 44, 44))
-        self.button2.setStyleSheet("QPushButton{background-image: url(link_button.png)}")
+        self.button2.setStyleSheet("QPushButton{background-image: url(resource/link_button.png)}")
         self.button2.clicked.connect(lambda: webbrowser.open('https://blog.naver.com/witnvillage/222531086519'))
 
         self.button3 = QPushButton('', self)
         self.button3.setGeometry(QRect(68, 448, 44, 44))
-        self.button3.setStyleSheet("QPushButton{background-image: url(link_button.png)}")
+        self.button3.setStyleSheet("QPushButton{background-image: url(resource/link_button.png)}")
         self.button3.clicked.connect(lambda: webbrowser.open('https://www.hidoc.co.kr/healthstory/news/C0000602256'))
 
         self.button4 = QPushButton('', self)
         self.button4.setGeometry(QRect(68, 597, 44, 44))
-        self.button4.setStyleSheet("QPushButton{background-image: url(link_button.png)}")
+        self.button4.setStyleSheet("QPushButton{background-image: url(resource/link_button.png)}")
         self.button4.clicked.connect(lambda: webbrowser.open('https://mobile.hidoc.co.kr/healthstory/news/C0000641953'))
 
         self.button5 = QPushButton('', self)
         self.button5.setGeometry(QRect(68, 687, 44, 44))
-        self.button5.setStyleSheet("QPushButton{background-image: url(link_button.png)}")
+        self.button5.setStyleSheet("QPushButton{background-image: url(resource/link_button.png)}")
         self.button5.clicked.connect(lambda: webbrowser.open('https://www.khealth.or.kr/kps/publish/view?menuId'
                                                              '=MENU00891&page_no=B2017004&pageNum=1&siteId=&srch_text'
                                                              '=%EA%B5%AC%EA%B0%95&srch_cate=&srch_type=ALL'
@@ -742,7 +742,7 @@ class ResultPage5(QMainWindow, QWidget):
 
         self.button6 = QPushButton('', self)
         self.button6.setGeometry(QRect(68, 777, 44, 44))
-        self.button6.setStyleSheet("QPushButton{background-image: url(link_button.png)}")
+        self.button6.setStyleSheet("QPushButton{background-image: url(resource/link_button.png)}")
         self.button6.clicked.connect(lambda: webbrowser.open('https://blog.naver.com/mohw2016/222838609558'))
 
     def prevPage(self):
