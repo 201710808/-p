@@ -2,7 +2,7 @@
 ## 프로젝트 요약
 ```mermaid
 graph LR
-A(입력)-->B[연산]
+A(<b>입력</b>)-->B[연산]
 B-->C(출력)
 
 style A fill:#FF5733,stroke:#333,stroke-width:2px
