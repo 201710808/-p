@@ -7,7 +7,7 @@ B --> C[결과 출력]
 
 style A fill:#6096B4,stroke:#333,stroke-width:2px
 style B fill:#93BFCF,stroke:#333,stroke-width:2px
-style C fill:#BDCDD6,stroke:#333,stroke-width:2px
+style C fill:#EEE9DA,stroke:#333,stroke-width:2px
 
 ```
 ## 구현 방법
