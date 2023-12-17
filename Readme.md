@@ -2,7 +2,7 @@
 ## 프로젝트 요약
 ```mermaid
 graph LR
-A[<br><br><b><span style='font-size:48px'>사진 촬영</span></b>\n\n\n<span style='font-size:32px'>스마트폰\nor\n웹캠 사용<br><br>] --> B[<br><br><b><span style='font-size:48px'>이미지 분석</span></b>\n\n\n<span style='font-size:32px'>스마트폰\nor\n웹캠 사용<br><br>]
+A[<br><br><b><span style='font-size:32px'>사진 촬영</span></b>\n\n\n<span style='font-size:24px'>스마트폰\nor\n웹캠 사용<br><br>] --> B[<br><br><b><span style='font-size:32px'>이미지 분석</span></b>\n\n\n<span style='font-size:24px'>스마트폰\nor\n웹캠 사용<br><br>]
 B --> C[결과 출력]
 
 style A fill:#FF5733,stroke:#333,stroke-width:2px
