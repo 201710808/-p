@@ -2,8 +2,12 @@
 ## 프로젝트 요약
 ```mermaid
 graph LR
-A(사진 촬영\n\n스마트폰 or 웹캠)-->B[이미지 분석]
-B-->C(결과 출력)
+A(입력)-->B[연산]
+B-->C(출력)
+
+style A fill:#FF5733,stroke:#333,stroke-width:2px
+style B fill:#3498db,stroke:#333,stroke-width:2px
+style C fill:#1abc9c,stroke:#333,stroke-width:2px
 ```
 ## 구현 방법
 ## 실제 동작
