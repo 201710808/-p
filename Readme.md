@@ -27,7 +27,8 @@ C-->D2[<b><span style='font-size:18px'>Resize<br>640 * 640</span></b>]
 style A fill:#EFF8FB ,stroke:#333,stroke-width:2px
 style B fill:#EFF8FB ,stroke:#333,stroke-width:2px
 style C fill:#EFF8FB ,stroke:#333,stroke-width:2px
-style D fill:#EFF8FB ,stroke:#333,stroke-width:2px
+style D1 fill:#EFF8FB ,stroke:#333,stroke-width:2px
+style D2 fill:#EFF8FB ,stroke:#333,stroke-width:2px
 style E fill:#EFF8FB ,stroke:#333,stroke-width:2px
 style F fill:#EFF8FB ,stroke:#333,stroke-width:2px
 style G fill:#EFF8FB ,stroke:#333,stroke-width:2px
