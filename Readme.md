@@ -23,7 +23,8 @@ H-->I[<b><span style='font-size:18px'>Resize<br>640 * 640</span></b>]
 I-->J[<b><span style='font-size:18px'>Binarization</span></b>]
 
 C-->D2[<b><span style='font-size:18px'>Resize<br>640 * 640</span></b>]
-D2-->E2[<b><span style='font-size:18px'>HSV기준 배경제거<br>H기준 빨간색 전경<br>S평균기준 배경제거</span></b>]
+D2-->E2[<b><span style='font-size:18px'>HSV기준 배경제거</span></b>]
+E2-->F2[<b><span style='font-size:18px'>전경 공백<br>Interpolation</span></b>]
 
 
 style A fill:#EFF8FB ,stroke:#333,stroke-width:2px
@@ -31,7 +32,7 @@ style B fill:#EFF8FB ,stroke:#333,stroke-width:2px
 style C fill:#EFF8FB ,stroke:#333,stroke-width:2px
 style D1 fill:#EFF8FB ,stroke:#333,stroke-width:2px
 style E1 fill:#EFF8FB ,stroke:#333,stroke-width:2px
-style F fill:#EFF8FB ,stroke:#333,stroke-width:2px
+style F1 fill:#EFF8FB ,stroke:#333,stroke-width:2px
 style G fill:#EFF8FB ,stroke:#333,stroke-width:2px
 style H fill:#EFF8FB ,stroke:#333,stroke-width:2px
 style I fill:#EFF8FB ,stroke:#333,stroke-width:2px
@@ -39,5 +40,6 @@ style J fill:#EFF8FB ,stroke:#333,stroke-width:2px
 
 style D2 fill:#EFF8FB ,stroke:#333,stroke-width:2px
 style E2 fill:#EFF8FB ,stroke:#333,stroke-width:2px
+style F2 fill:#EFF8FB ,stroke:#333,stroke-width:2px
 ```
 ## 실제 동작
