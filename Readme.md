@@ -16,7 +16,7 @@ A(<b><span style='font-size:18px'>Image</span></b>)-->B[<b><span style='font-siz
 B-->C[<b><span style='font-size:18px'>Homomorphic<br>Filtering</span></b>]
 C-->D1[<b><span style='font-size:18px'>Resize<br>120 * 120</span></b>]
 D1-->E1[<b><span style='font-size:18px'>Meanshift<br>영역분할</span></b>]
-E1-->F[<b><span style='font-size:18px'>Gaussian<br>Smoothing</span></b>]
+E1-->F1[<b><span style='font-size:18px'>Gaussian<br>Smoothing</span></b>]
 F-->G[<b><span style='font-size:18px'>Canny<br>Edge 검출</span></b>]
 G-->H[<b><span style='font-size:18px'>Dilate<br>&<br>Erode</span></b>]
 H-->I[<b><span style='font-size:18px'>Resize<br>640 * 640</span></b>]
