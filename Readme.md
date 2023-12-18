@@ -33,3 +33,15 @@ style H fill:#EFF8FB ,stroke:#333,stroke-width:2px
 style I fill:#EFF8FB ,stroke:#333,stroke-width:2px
 ```
 ## 실제 동작
+```mermaid
+graph TB
+  subgraph A[가로 차트]
+    A1 --> A2
+    A2 --> A3
+  end
+  subgraph B[세로 차트]
+    B1 --> B2
+    B2 --> B3
+  end
+  A3 --> B1
+```
