@@ -27,5 +27,9 @@ style B fill:#EFF8FB ,stroke:#333,stroke-width:2px
 style C1 fill:#EFF8FB ,stroke:#333,stroke-width:2px
 style C2 fill:#EFF8FB ,stroke:#333,stroke-width:2px
 style C3 fill:#EFF8FB ,stroke:#333,stroke-width:2px
+style D fill:#EFF8FB ,stroke:#333,stroke-width:2px
+style E1 fill:#EFF8FB ,stroke:#333,stroke-width:2px
+style E2 fill:#EFF8FB ,stroke:#333,stroke-width:2px
+style E3 fill:#EFF8FB ,stroke:#333,stroke-width:2px
 ```
 ## 실제 동작
