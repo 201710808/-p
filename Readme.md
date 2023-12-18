@@ -13,10 +13,14 @@ style C fill:#EFF8FB ,stroke:#333,stroke-width:2px
 ```mermaid
 graph
 A[<b><span style='font-size:20px'>Image</span></b>]-->B[<b><span style='font-size:20px'>Resize<br>640 * 640</span></b>]
-B-->C[<b><span style='font-size:20px'>  결과 출력  </span></b><br><br>증상 유형<br>증상 심각도<br><br>해결책 제시<br><br>]
+B-->C1[]
+B-->C2[]
+B-->C3[]
 
 style A fill:#EFF8FB ,stroke:#333,stroke-width:2px
 style B fill:#EFF8FB ,stroke:#333,stroke-width:2px
-style C fill:#EFF8FB ,stroke:#333,stroke-width:2px
+style C1 fill:#EFF8FB ,stroke:#333,stroke-width:2px
+style C2 fill:#EFF8FB ,stroke:#333,stroke-width:2px
+style C3 fill:#EFF8FB ,stroke:#333,stroke-width:2px
 ```
 ## 실제 동작
