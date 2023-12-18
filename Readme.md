@@ -30,7 +30,7 @@ J-->K
 F2-->K[<b><span style='font-size:18px'>if img_bin==0:<br>img_h=0</span></b>]
 K-->L[<b><span style='font-size:18px'>Labeling</span></b>]
 L-->M[<b><span style='font-size:18px'>이미지의 중앙<br>Label만 선택</span></b>]
-M-->N[<b><span style='font-size:18px'>레이블 공백<br>Interpolation</span></b>]
+M-->N[<b><span style='font-size:18px'>Label 공백<br>Interpolation</span></b>]
 
 
 style A fill:#EFF8FB ,stroke:#333,stroke-width:2px
