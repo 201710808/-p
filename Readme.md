@@ -33,14 +33,3 @@ style H fill:#EFF8FB ,stroke:#333,stroke-width:2px
 style I fill:#EFF8FB ,stroke:#333,stroke-width:2px
 ```
 ## 실제 동작
-```mermaid
-graph TD
-  A((Image)) -->| | B((Resize 640 * 640))
-  B -->| | C((Homomorphic Filtering))
-  C -->| | D((Resize 120 * 120))
-  D -->| | E((Meanshift 영역분할))
-  E -->| | F((Gaussian Smoothing))
-  F -->| | G((Canny Edge 검출))
-  G -->| | H((Dilate & Erode))
-  H -->| | I((Resize 640 * 640))
-```
