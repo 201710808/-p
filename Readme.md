@@ -11,13 +11,12 @@ style C fill:#EFF8FB ,stroke:#333,stroke-width:2px
 ```
 ## 구현 방법
 ```mermaid
-stateDiagram
-    [*] --> Still
-    Still --> [*]
+graph
+A[<b><span style='font-size:20px'>  사진 촬영  </span></b><br><br>스마트폰\nor\n웹캠 사용<br><br><br>]-->B[<b><span style='font-size:20px'>이미지 분석</span></b><br><br>OpenCV 라이브러리 활용<br><br>혓바닥, 백태 영역 분리<br>백태 영역 너비 분석<br><br>]
+B-->C[<b><span style='font-size:20px'>  결과 출력  </span></b><br><br>증상 유형<br>증상 심각도<br><br>해결책 제시<br><br>]
 
-    Still --> Moving
-    Moving --> Still
-    Moving --> Crash
-    Crash --> [*]
+style A fill:#EFF8FB ,stroke:#333,stroke-width:2px
+style B fill:#EFF8FB ,stroke:#333,stroke-width:2px
+style C fill:#EFF8FB ,stroke:#333,stroke-width:2px
 ```
 ## 실제 동작
