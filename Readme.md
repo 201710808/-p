@@ -12,7 +12,7 @@ style C fill:#EFF8FB ,stroke:#333,stroke-width:2px
 ## 구현 방법
 ```mermaid
 graph
-A[<b><span style='font-size:20px'>Image</span></b>]-->B[<b><span style='font-size:20px'>640 * 640 Resize</span></b>]
+A[<b><span style='font-size:20px'>Image</span></b>]-->B[<b><span style='font-size:20px'>Resize<br>640 * 640</span></b>]
 B-->C[<b><span style='font-size:20px'>  결과 출력  </span></b><br><br>증상 유형<br>증상 심각도<br><br>해결책 제시<br><br>]
 
 style A fill:#EFF8FB ,stroke:#333,stroke-width:2px
