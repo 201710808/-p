@@ -10,4 +10,14 @@ style B fill:#EFF8FB ,stroke:#333,stroke-width:2px
 style C fill:#EFF8FB ,stroke:#333,stroke-width:2px
 ```
 ## 구현 방법
+```mermaid
+stateDiagram
+    [*] --> Still
+    Still --> [*]
+
+    Still --> Moving
+    Moving --> Still
+    Moving --> Crash
+    Crash --> [*]
+```
 ## 실제 동작
