@@ -33,26 +33,13 @@ style H fill:#EFF8FB ,stroke:#333,stroke-width:2px
 style I fill:#EFF8FB ,stroke:#333,stroke-width:2px
 ```
 ## 실제 동작
-```mermaid
+
 graph TD
-  subgraph A
-    a1((Image))
-    a2((Resize 640 * 640))
-    a3((Homomorphic Filtering))
-  end
-  subgraph B
-    b1((Resize 120 * 120))
-    b2((Meanshift 영역분할))
-    b3((Gaussian Smoothing))
-  end
-  subgraph C
-    c1((Canny Edge 검출))
-    c2((Dilate & Erode))
-    c3((Resize 640 * 640))
-  end
-  a1 --> a2 --> a3
-  b1 --> b2 --> b3
-  c1 --> c2 --> c3
-  a3 --> b1
-  b3 --> c1
-```
+  A((Image)) -->| | B((Resize 640 * 640))
+  B -->| | C((Homomorphic Filtering))
+  C -->| | D((Resize 120 * 120))
+  D -->| | E((Meanshift 영역분할))
+  E -->| | F((Gaussian Smoothing))
+  F -->| | G((Canny Edge 검출))
+  G -->| | H((Dilate & Erode))
+  H -->| | I((Resize 640 * 640))
