@@ -16,6 +16,11 @@ A[<b><span style='font-size:20px'>Image</span></b>]-->B[<b><span style='font-siz
 B-->C1[<b><span style='font-size:20px'>R</span></b>]
 B-->C2[<b><span style='font-size:20px'>G</span></b>]
 B-->C3[<b><span style='font-size:20px'>B</span></b>]
+C1-->D[<b><span style='font-size:20px'>Homomorphic filtering</span></b>]
+D-->E1[<b><span style='font-size:20px'>H</span></b>]
+D-->E2[<b><span style='font-size:20px'>S</span></b>]
+D-->E3[<b><span style='font-size:20px'>V</span></b>]
+
 
 style A fill:#EFF8FB ,stroke:#333,stroke-width:2px
 style B fill:#EFF8FB ,stroke:#333,stroke-width:2px
