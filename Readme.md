@@ -38,6 +38,8 @@ N-->O2[<b><span style='font-size:18px'>img_homomorphic에<br>Label 적용</span>
 O2-->P1[<b><span style='font-size:18px'>H</span></b>]
 O2-->P2[<b><span style='font-size:18px'>S</span></b>]
 O2-->P3[<b><span style='font-size:18px'>V</span></b>]
+P2-->Q[<b><span style='font-size:18px'>S 평균 기준<br>Binarization</span></b>]
+Q-->R[<b><span style='font-size:18px'>백태 영역 비율 계산</span></b>]
 
 
 style A fill:#EFF8FB ,stroke:#333,stroke-width:2px
@@ -65,5 +67,7 @@ style O2 fill:#EFF8FB ,stroke:#333,stroke-width:2px
 style P1 fill:#EFF8FB ,stroke:#333,stroke-width:2px
 style P2 fill:#EFF8FB ,stroke:#333,stroke-width:2px
 style P3 fill:#EFF8FB ,stroke:#333,stroke-width:2px
+style Q fill:#EFF8FB ,stroke:#333,stroke-width:2px
+style R fill:#EFF8FB ,stroke:#333,stroke-width:2px
 ```
 ## 실제 동작
