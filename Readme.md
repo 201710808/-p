@@ -31,6 +31,10 @@ F2-->K[<b><span style='font-size:18px'>if img_bin==0:<br>img_h=0</span></b>]
 K-->L[<b><span style='font-size:18px'>Labeling</span></b>]
 L-->M[<b><span style='font-size:18px'>이미지의 중앙<br>Label만 선택</span></b>]
 M-->N[<b><span style='font-size:18px'>Label 공백<br>Interpolation</span></b>]
+N-->O1[<b><span style='font-size:18px'>상하 영역 분할<br>기준점 탐색</span></b>]
+
+C-->O2
+N-->O2[<b><span style='font-size:18px'>img_homomorphic에<br>Label 적용</span></b>]
 
 
 style A fill:#EFF8FB ,stroke:#333,stroke-width:2px
@@ -52,5 +56,8 @@ style K fill:#EFF8FB ,stroke:#333,stroke-width:2px
 style L fill:#EFF8FB ,stroke:#333,stroke-width:2px
 style M fill:#EFF8FB ,stroke:#333,stroke-width:2px
 style N fill:#EFF8FB ,stroke:#333,stroke-width:2px
+style O1 fill:#EFF8FB ,stroke:#333,stroke-width:2px
+
+style O2 fill:#EFF8FB ,stroke:#333,stroke-width:2px
 ```
 ## 실제 동작
