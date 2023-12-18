@@ -39,6 +39,7 @@ O2-->P1[<b><span style='font-size:18px'>H</span></b>]
 O2-->P2[<b><span style='font-size:18px'>S</span></b>]
 O2-->P3[<b><span style='font-size:18px'>V</span></b>]
 P2-->Q[<b><span style='font-size:18px'>S 평균 기준<br>Binarization</span></b>]
+O1-->R
 Q-->R[<b><span style='font-size:18px'>백태 영역 비율 계산</span></b>]
 
 
