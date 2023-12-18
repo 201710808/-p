@@ -35,6 +35,9 @@ N-->O1[<b><span style='font-size:18px'>상하 영역 분할<br>기준점 탐색<
 
 C-->O2
 N-->O2[<b><span style='font-size:18px'>img_homomorphic에<br>Label 적용</span></b>]
+O2-->P1[<b><span style='font-size:18px'>H</span></b>]
+O2-->P2[<b><span style='font-size:18px'>S</span></b>]
+O2-->P3[<b><span style='font-size:18px'>V</span></b>]
 
 
 style A fill:#EFF8FB ,stroke:#333,stroke-width:2px
@@ -59,5 +62,8 @@ style N fill:#EFF8FB ,stroke:#333,stroke-width:2px
 style O1 fill:#EFF8FB ,stroke:#333,stroke-width:2px
 
 style O2 fill:#EFF8FB ,stroke:#333,stroke-width:2px
+style P1 fill:#EFF8FB ,stroke:#333,stroke-width:2px
+style P2 fill:#EFF8FB ,stroke:#333,stroke-width:2px
+style P3 fill:#EFF8FB ,stroke:#333,stroke-width:2px
 ```
 ## 실제 동작
