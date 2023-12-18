@@ -26,6 +26,9 @@ C-->D2[<b><span style='font-size:18px'>Resize<br>640 * 640</span></b>]
 D2-->E2[<b><span style='font-size:18px'>HSV기준 배경제거</span></b>]
 E2-->F2[<b><span style='font-size:18px'>전경 공백<br>Interpolation</span></b>]
 
+J-->K
+F2-->K[<b><span style='font-size:18px'>if img_bin==0:<br>h=0</span></b>]
+
 
 style A fill:#EFF8FB ,stroke:#333,stroke-width:2px
 style B fill:#EFF8FB ,stroke:#333,stroke-width:2px
