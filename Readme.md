@@ -18,6 +18,8 @@ C-->D[<b><span style='font-size:20px'>Resize<br>120 * 120</span></b>]
 D-->E[<b><span style='font-size:20px'>Meanshift<br>영역분할</span></b>]
 E-->F[<b><span style='font-size:20px'>Gaussian<br>Smoothing</span></b>]
 F-->G[<b><span style='font-size:20px'>Canny<br>Edge 검출</span></b>]
+G-->H[<b><span style='font-size:20px'>Dilate<br>&<br>Erode</span></b>]
+H-->I[<b><span style='font-size:20px'>Resize<br>640 * 640</span></b>]
 
 
 style A fill:#EFF8FB ,stroke:#333,stroke-width:2px
@@ -27,5 +29,7 @@ style D fill:#EFF8FB ,stroke:#333,stroke-width:2px
 style E fill:#EFF8FB ,stroke:#333,stroke-width:2px
 style F fill:#EFF8FB ,stroke:#333,stroke-width:2px
 style G fill:#EFF8FB ,stroke:#333,stroke-width:2px
+style H fill:#EFF8FB ,stroke:#333,stroke-width:2px
+style I fill:#EFF8FB ,stroke:#333,stroke-width:2px
 ```
 ## 실제 동작
