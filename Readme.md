@@ -23,7 +23,7 @@ H-->I[<b><span style='font-size:18px'>Resize<br>640 * 640</span></b>]
 I-->J[<b><span style='font-size:18px'>Binarization</span></b>]
 
 C-->D2[<b><span style='font-size:18px'>Resize<br>640 * 640</span></b>]
-D2-->E2[<b><span style='font-size:18px'>HSV기준 이미지 편집</span></b>]
+D2-->E2[<b><span style='font-size:18px'>HSV기준 배경제거<br>H기준 빨간색 전경<br>S평균기준 배경제거</span></b>]
 
 
 style A fill:#EFF8FB ,stroke:#333,stroke-width:2px
