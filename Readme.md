@@ -13,9 +13,9 @@ style C fill:#EFF8FB ,stroke:#333,stroke-width:2px
 ```mermaid
 graph
 A[<b><span style='font-size:20px'>Image</span></b>]-->B[<b><span style='font-size:20px'>Resize<br>640 * 640</span></b>]
-B-->C1[<b><span style='font-size:20px'>Image</span></b>]
-B-->C2[<b><span style='font-size:20px'>Image</span></b>]
-B-->C3[<b><span style='font-size:20px'>Image</span></b>]
+B-->C1[<b><span style='font-size:20px'>R</span></b>]
+B-->C2[<b><span style='font-size:20px'>G</span></b>]
+B-->C3[<b><span style='font-size:20px'>B</span></b>]
 
 style A fill:#EFF8FB ,stroke:#333,stroke-width:2px
 style B fill:#EFF8FB ,stroke:#333,stroke-width:2px
