@@ -12,6 +12,8 @@ style B fill:#EFF8FB ,stroke:#333,stroke-width:2px
 style C fill:#EFF8FB ,stroke:#333,stroke-width:2px
 ```
 ## 구현 방법
+자세한 이미지 분석 과정을 나타낸 플로우 차트입니다.  
+
 ```mermaid
 graph
 A(<b><span style='font-size:18px'>Image</span></b>)-->B[<b><span style='font-size:20px'>Resize<br>640 * 640</span></b>]
