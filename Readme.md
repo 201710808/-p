@@ -76,7 +76,7 @@ style Q fill:#EFF8FB ,stroke:#333,stroke-width:2px
 style R fill:#EFF8FB ,stroke:#333,stroke-width:2px
 ```
 ## 실제 동작
-![image](https://github.com/201710808/-p/assets/79844211/a5dd5126-c18c-4e74-853c-f9ecc6d7c465)
+![image](https://github.com/201710808/-p/assets/79844211/a5dd5126-c18c-4e74-853c-f9ecc6d7c465){: width="50%" height="50%"}
 ![image](https://github.com/201710808/-p/assets/79844211/fb3e3084-8c97-4fcf-8628-0ac3e6ccce6d)
 ![image](https://github.com/201710808/-p/assets/79844211/b8686bca-355d-4775-8691-01b3ca444318)
 ![image](https://github.com/201710808/-p/assets/79844211/552e0295-4ef0-4604-856a-70b6c69d80bb)
